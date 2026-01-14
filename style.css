@@ -12,7 +12,7 @@ body {
 .navbar {
   background: #1e40af; /* Deep blue navbar */
   color: #ffffff;
-  padding: 20px;
+  padding: 50px;
   text-align: center;
   box-shadow: 0 4px 10px rgba(0,0,0,0.5);
 }
