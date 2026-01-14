@@ -39,9 +39,9 @@ function calculateInventoryValue() {
   return products.reduce((total, product) => total + product.price * product.quantity, 0);
 }
 
-// Check for low stock items (less than 5)
+// Check for low stock items (less than 10)
 function checkLowStock() {
-  return products.filter(product => product.quantity < 5).map(product => product.name);
+  return products.filter(product => product.quantity < 10).map(product => product.name);
 }
 
 // Save products to localStorage and render the table
