@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Inventory Management System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <h1>InventoryPro</h1>
+    <p>Smart Inventory Management</p>
+  </header>
+
+  <main class="container">
+
+    <!-- Add Product -->
+    <section class="card">
+      <h2>Add Product</h2>
+      <input type="text" id="name" placeholder="Product Name">
+      <input type="number" id="price" placeholder="Price (RM)">
+      <input type="number" id="quantity" placeholder="Quantity">
+      <button onclick="addProduct()">Add Item</button>
+    </section>
+
+    <!-- Inventory Table -->
+    <section class="card">
+      <h2>Inventory List</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Price (RM)</th>
+            <th>Quantity</th>
+            <th>Total Value</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="inventory"></tbody>
+      </table>
+    </section>
+
+    <!-- Summary -->
+    <section class="card summary">
+      <h2>Inventory Summary</h2>
+      <p id="totalValue">Total Inventory Value: RM 0</p>
+      <p id="alert" class="alert"></p>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
